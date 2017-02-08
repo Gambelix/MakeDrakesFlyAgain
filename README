@@ -1,0 +1,29 @@
+# MakeDrakesFlyAgain
+
+For a detailed description and installation manual please watch:
+
+
+=====ABOUT MY CODE=======
+
+If you are using my code for your work or you publish it somewhere else please include a link to my Yotube and my Twitter:
+twitter.com/gambelix1337
+bit.ly/Gambelix
+
+Of course /rsc/jq.js and /menu/angular.js are not my work.
+
+Angular (/rsc/jq.js) from:
+https://angularjs.org/
+
+Jquery from (/menu/angular.js):
+https://jquery.com/
+
+========================
+
+
+=====INSTALLATION=====
+-Download the repository (unzip if you didn't clone it)
+-Open Google Chrome
+-Open chrome://extensions 
+-Enable Developer Mode
+-Add a new extension (assign the folder you just downloaded)
+======================
