@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+
+  "name": "Make Drakes Fly Again",
+  "description": "Enhances your experience of the Drakemoon family websites.",
+  "version": "0.0.5",
+
+  "browser_action": {
+    "default_icon": {
+            "16": "images/icon16.png",
+            "24": "images/icon24.png",
+            "32": "images/icon32.png",
+            "48": "images/icon48.png",
+            "64": "images/icon64.png",
+            "128": "images/icon128.png"
+          },
+    "default_popup": "menu/menu.html",
+    "default_title": "Make Drakes Fly Again"
+  
+  },
+  "web_accessible_resources": [
+    "drakelounge/store/loungestore.css",
+    "drakewing/shop/wingshop.css"
+  ],
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "tabs",
+    "https://www.drakelounge.com/*",
+	  "https://www.drakewing.com/*",
+	  "https://www.drakemoon.com/*",
+	  "https://www.backpack.tf/*"
+  ],
+  "background": {
+    "page": "bgr/bgr.html"
+  },
+  "content_scripts":  [{
+    "matches": ["https://www.drakelounge.com/*",
+	"https://www.drakewing.com/*",
+	"https://www.drakemoon.com/*"
+	],
+    "js": ["rsc/jq.js",
+  "rsc/customLib.js",
+  "rsc/math.js",
+  "drakelounge/history/loungeHistory.js",
+  "drakemoon/percentages/percentages.js",
+  "drakelounge/store/loungestore.js",
+  "drakewing/shop/wingshop.js"]
+  }]
+}
