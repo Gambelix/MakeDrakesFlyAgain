@@ -1,0 +1,29 @@
+body{
+  background-color: lightgrey;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span{
+  font: 200 14px/1.5 Georgia, Times New Roman, serif;
+  color: #fff;
+  text-align: center;
+}
+
+.btn{
+  text-decoration: none;
+  color: #000;
+}
+
+#refs{
+  text-align: center;
+  text-shadow: 1px 1px 3px #666666;
+  font: bold 14px/1.5 Helvetica, Verdana, sans-serif;
+  color: #ffffff;
+  background: #333333;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 1px;
+  text-decoration: none;
+}

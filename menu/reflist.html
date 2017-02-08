@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="reflist">
+  <head>
+    <link rel="stylesheet" type="text/css" href="reflist.css" />
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="reflist.js"></script>
+  </head>
+  <body ng-controller="SiteController as sc">
+    <div></div>
+    <a href="menu.html" class="btn">Go back to menu</a>
+    
+    <div>
+    <ul>
+      <li ng-repeat="site in sc.sitelist"><a ng-href="{{site.link}}" target="_blank">
+        <svg width="200" height="100">
+          <image width="200" height="100" xlink:href="" ng-href="{{site.logo}}" alt="?"/>
+        </svg>
+        <div class="textWrap"><h3>{{site.name + " (" + site.earn + ")"}}</h3>
+        <p ng-show="site.desc == 'Roulette'">{{'Play Roulette to multiply your money. Use code "Gambelix" to get ' + site.earn + " free."}}</p>
+        <p ng-show="site.desc == 'Roulette+'">{{'Play Roulette or other games to multiply your money. Use code "Gambelix" to get ' + site.earn + " free."}}</p>
+        <p ng-show="site.desc == 'Cases'">{{'Open cases and grab nice skins. Use code "Gambelix" to get ' + site.earn + " free."}}</p>
+        <p ng-show="site.desc == 'Bets'">{{'Start betting on Dota, LoL or CSGO matches to earn money. Use code "Gambelix" to get ' + site.earn + " free."}}</p>
+        <p ng-show="site.desc == 'Bets+Roulette'">{{'Start betting on Dota, LoL or CSGO matches or play Roulette to multiply your money. Use code "Gambelix" to get ' + site.earn + " free."}}</p>
+         <p ng-show="site.desc == 'Casino'">{{'Play in a online Casino with various games. Use the provided link to get ' + site.earn + " free."}}</p>
+         <p ng-show="site.desc == 'XRCI2Q'">{{'Play in a online Casino with various games. Use code "XRCI2Q" to get ' + site.earn + " free."}}</p>
+         <p ng-show="site.desc == 'horse'">{{'Unique horse race gambling site. Use code "GAMBELIX" to get ' + site.earn + " free."}}</p></div>
+      </a></li>
+    </ul>
+    </div>
+  </body>
+</html>
